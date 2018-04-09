@@ -1,0 +1,2 @@
+[08-Apr-2018 22:12:45 UTC] PHP Fatal error:  Class 'Products' not found in C:\Projects\computershop\database\migrations\2018_04_08_220751_create_product.php on line 25
+[09-Apr-2018 13:17:56 UTC] PHP Fatal error:  Class 'Article' not found in C:\Projects\computershop\database\seeds\ProductsTableSeeder.php on line 21
