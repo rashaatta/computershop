@@ -1,2 +1,7 @@
 [08-Apr-2018 22:18:06 UTC] PHP Fatal error:  Class 'Products' not found in C:\Projects\computershop\routes\web.php on line 21
 [09-Apr-2018 15:17:27 UTC] PHP Fatal error:  Class 'Input' not found in C:\Projects\computershop\routes\api.php on line 49
+[09-Apr-2018 16:03:33 UTC] PHP Fatal error:  Class 'App\Http\Controllers\View' not found in C:\Projects\computershop\app\Http\Controllers\ProductController.php on line 12
+[09-Apr-2018 16:04:52 UTC] PHP Fatal error:  Cannot use Illuminate\Http\Request as Request because the name is already in use in C:\Projects\computershop\app\Http\Controllers\ProductController.php on line 5
+[09-Apr-2018 16:05:05 UTC] PHP Fatal error:  Class 'App\Http\Controllers\View' not found in C:\Projects\computershop\app\Http\Controllers\ProductController.php on line 15
+[09-Apr-2018 16:08:40 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Response' not found in C:\Projects\computershop\app\Http\Controllers\ProductController.php on line 22
+[09-Apr-2018 16:09:19 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Response' not found in C:\Projects\computershop\app\Http\Controllers\ProductController.php on line 23

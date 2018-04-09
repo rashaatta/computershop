@@ -20,42 +20,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 Route::group(['middleware' => [ 'api']], function () {
-    Route::get('prods', function () {
-        $products = Product::all();
-
-        return View::make('welcome')->with('products', $products);
-    });
-
-    Route::get('/products/{product_id?}', function($product_id) {
-        //  dd($product_id);
-        $product = Product::find($product_id);
-
-        return Response::json($product);
-    });
-
-    Route::post('/products', function(Request $request) {
-        $product = Product::create($request->all());
-
-        return Response::json($product);
-    });
-
-    Route::put('/products/{product_id?}', function(Request $request, $product_id) {
-
-        $product = Product::find($product_id);
-
-        $product->name = $request->name;
-        $product->type = $request->type;
-        $product->price = $request->price;
-        $product->product_image = $request->product_image;
-
-        $product->save();
-
-        return Response::json($product);
-    });
-
-    Route::delete('/products/{product_id?}', function($product_id) {
-        $product = Product::destroy($product_id);
-
-        return Response::json($product);
-    });
+    Route::get('/prods', 'ProductController@index');
+    Route::get('/products/{product_id?}', 'ProductController@edit');
+    Route::post('/products', 'ProductController@store');
+    Route::put('/products/{product_id?}', 'ProductController@update');
+    Route::delete('/products/{product_id?}', 'ProductController@destroy');
 });
